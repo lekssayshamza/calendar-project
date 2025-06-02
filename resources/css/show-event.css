@@ -1,0 +1,93 @@
+/* show-event.css */
+
+/* Page container */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Headings */
+.container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Paragraphs */
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Strong labels */
+.container p strong {
+    color: #555;
+    display: inline-block;
+    width: 120px;
+}
+
+/* Color swatch */
+.container p span {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

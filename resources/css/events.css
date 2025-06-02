@@ -1,0 +1,124 @@
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Button Styling */
+a.btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 16px;
+    background-color: #3490dc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+a.btn:hover {
+    background-color: #2779bd;
+}
+
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+/* Success Alert */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background-color: #f1f1f1;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table td span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Action Buttons */
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+form {
+    display: inline-block;
+}
+
+
+.table td {
+    white-space: nowrap; /* prevents buttons from wrapping to a new line */
+}
+
+/* Optional: add spacing between action buttons */
+.table td a.btn-sm,
+.table td form {
+    margin-right: 5px;
+}

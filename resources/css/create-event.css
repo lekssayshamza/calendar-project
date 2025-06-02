@@ -1,0 +1,103 @@
+/* Container around the form */
+.container {
+    max-width: 700px;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Title */
+.container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form Group */
+form > div {
+    margin-bottom: 1.25rem;
+}
+
+/* Labels */
+form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+/* Inputs, Textareas, and Color Pickers */
+form input[type="text"],
+form input[type="datetime-local"],
+form input[type="color"],
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: border 0.3s ease;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Checkbox styling */
+form input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 0.5rem;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Error messages */
+form ul {
+    background-color: #ffe6e6;
+    padding: 1rem;
+    border: 1px solid #e74c3c;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form ul li {
+    color: #e74c3c;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    form button[type="submit"] {
+        width: 100%;
+    }
+}
