@@ -41,7 +41,10 @@ class EventController extends Controller
             'all_day' => 'nullable|boolean',
             'color' => 'nullable|string|max:7', // assuming hex color
             'description' => 'nullable|string',
+            'category' => 'nullable|string|max:255',
         ]);
+
+        
 
         // Assign the currently authenticated user's ID
         $validated['user_id'] = Auth::id();
@@ -50,6 +53,7 @@ class EventController extends Controller
         $validated['all_day'] = $request->has('all_day');
 
         Event::create($validated);
+        
 
         return redirect()->route('events.calendar')->with('success', 'Event created successfully.');
     }
@@ -83,6 +87,7 @@ class EventController extends Controller
             'all_day' => 'nullable|boolean',
             'color' => 'nullable|string|max:7',
             'description' => 'nullable|string',
+            'category' => 'nullable|string|max:255',
         ]);
 
         // Ensure all_day is always set as boolean (true if checked, false otherwise)
@@ -133,11 +138,13 @@ class EventController extends Controller
             }
             return [
                 'id' => $event->id,            // add this line
-                'title' => $event->title,
+                // 'title' => $event->title,
+                'title' => $event->title . ' (' . $event->category . ')',
                 'start' => $event->start_time,
                 'end' => $end,
                 'allDay' => $event->all_day,
                 'color' => $event->color,
+                'category' => $event->category,
             ];
         });
 

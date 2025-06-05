@@ -47,6 +47,18 @@
             <label class="form-check-label" for="all_day">All Day Event</label>
         </div>
 
+        <div class="mt-4">
+            <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
+            <select name="category" id="category" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                <option value="">Choose category</option>
+                <option value="work" {{ $event->category == 'work' ? 'selected' : '' }}>Work</option>
+                <option value="personal" {{ $event->category == 'personal' ? 'selected' : '' }}>Personal</option>
+                <option value="study" {{ $event->category == 'study' ? 'selected' : '' }}>Study</option>
+                <option value="holiday" {{ $event->category == 'holiday' ? 'selected' : '' }}>Holiday</option>
+            </select>
+        </div>
+
+
         <div class="mb-3">
             <label>Color</label>
             <input type="color" name="color" class="form-control" value="{{ old('color', $event->color) }}">

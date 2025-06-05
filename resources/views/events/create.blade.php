@@ -47,6 +47,20 @@
             <input type="checkbox" name="all_day" value="1" {{ old('all_day') ? 'checked' : '' }}>
         </div>
 
+        <div class="mt-4">
+            <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
+            <select name="category" id="category" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                <option value="">Choose category</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="study">Study</option>
+                <option value="holiday">Holiday</option>
+            </select>
+        </div>
+
+
+
+
         <div>
             <label>Color:</label>
             <input type="color" name="color" value="{{ old('color', '#000000') }}">

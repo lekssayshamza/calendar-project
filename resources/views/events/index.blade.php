@@ -19,6 +19,7 @@
         <thead>
             <tr>
                 <th>Title</th>
+                <th>Category</th>
                 <th>Start</th>
                 <th>End</th>
                 <th>All Day</th>
@@ -30,6 +31,7 @@
             @foreach($events as $event)
                 <tr>
                     <td>{{ $event->title }}</td>
+                    <td>{{ $event->category }}</td>
                     <td>{{ $event->start_time }}</td>
                     <td>{{ $event->end_time }}</td>
                     <td>{{ $event->all_day ? 'Yes' : 'No' }}</td>

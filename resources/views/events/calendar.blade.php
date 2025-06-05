@@ -52,6 +52,11 @@
                 if(info.event.extendedProps.color) {
                     info.el.style.backgroundColor = info.event.extendedProps.color;
                 }
+
+                // Show the category as a tooltip
+                if (info.event.extendedProps.category) {
+                    info.el.setAttribute('title', `Category: ${info.event.extendedProps.category}`);
+                }
             },
 
             eventClick: function(info) {

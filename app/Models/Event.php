@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
+use App\Models\Recurrence;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 
@@ -17,6 +18,7 @@ class Event extends Model
         'end_time', 
         'all_day', 
         'color',
+        'category', 
     ];
 
     protected $casts = [
@@ -30,5 +32,11 @@ class Event extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function recurrence()
+    {
+        return $this->hasOne(Recurrence::class);
+    }
+
 
 }

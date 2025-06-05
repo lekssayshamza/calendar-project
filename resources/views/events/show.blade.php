@@ -11,6 +11,9 @@
     <p><strong>Start Time:</strong> {{ $event->start_time }}</p>
     <p><strong>End Time:</strong> {{ $event->end_time ?? 'N/A' }}</p>
     <p><strong>All Day:</strong> {{ $event->all_day ? 'Yes' : 'No' }}</p>
+
+    <p><strong>Category:</strong> {{ $event->category }}</p>
+
     <p><strong>Color:</strong> <span style="background-color: {{ $event->color }}; padding: 5px 15px;">&nbsp;</span></p>
 
     <div style="display: flex; gap: 10px; margin-bottom: 20px;">
